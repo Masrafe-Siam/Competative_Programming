@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main() {
+ double amount;
+ int left;
+    int left1;
+    cin>>amount;
+    int money=amount;
+    int coin=(amount-money)*100;
+    cout<<"NOTAS:"<<endl;
+    int hundred=money/100;
+    cout<<hundred<<" nota(s) de R$ 100.00"<<endl;
+    left=money%100;
+    int fifty=left/50;
+    cout<<fifty<<" nota(s) de R$ 50.00"<<endl;
+    left=left%50;
+    int twenty=left/20;
+    cout<<twenty<<" nota(s) de R$ 20.00"<<endl;
+    left=left%20;
+    int ten=left/10;
+    cout<<ten<<" nota(s) de R$ 10.00"<<endl;
+    left=left%10;
+    int five=left/5;
+    cout<<five<<" nota(s) de R$ 5.00"<<endl;
+    left=left%5;
+    int two=left/2;
+    cout<<two<<" nota(s) de R$ 2.00"<<endl;
+    left=left%2;
+    cout<<"MOEDAS:"<<endl;
+    int one=left/1;
+    cout<<one<<" moeda(s) de R$ 1.00"<<endl;
+    int fiftycent=coin/50;
+    cout<<fiftycent<<" moeda(s) de R$ 0.50"<<endl;
+    left1=coin%50;
+    int twentyfivecent=left1/25;
+    cout<<twentyfivecent<<" moeda(s) de R$ 0.25"<<endl;
+    left1=left1%25;
+    int tencent=left1/10;
+    cout<<tencent<<" moeda(s) de R$ 0.10"<<endl;
+    left1=left1%10;
+    int fivecent=left1/5;
+    cout<<fivecent<<" moeda(s) de R$ 0.05"<<endl;
+    left1=left1%5;
+    int onecent=left1/1;
+    cout<<onecent<<" moeda(s) de R$ 0.01"<<endl;
+    return 0;
+}
